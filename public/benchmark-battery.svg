@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic battery discharge comparison</title>
+  <desc id="desc">A simulated battery curve compared with a constant-power energy-balance reference over twelve minutes. Synthetic model data, not real flight measurements.</desc>
+  <rect width="860" height="400" rx="18" fill="#f7fafc"/>
+  <text x="36" y="34" fill="#1e2b3c" font-family="Arial,sans-serif" font-size="17" font-weight="700">BATTERY DISCHARGE · SYNTHETIC REFERENCE</text>
+  <text x="36" y="55" fill="#617286" font-family="Arial,sans-serif" font-size="11">Default assumptions · 22.2 V × 5.2 Ah · starting SoC 96% · current physics power 504.4 W</text>
+  <g stroke="#dce5eb" stroke-width="1">
+    <path d="M70 48H790 M70 116H790 M70 184H790 M70 252H790 M70 320H790"/>
+  </g>
+  <g fill="#7b8a9b" font-family="Arial,sans-serif" font-size="10" text-anchor="end">
+    <text x="60" y="52">100%</text><text x="60" y="120">75%</text><text x="60" y="188">50%</text><text x="60" y="256">25%</text><text x="60" y="324">0%</text>
+  </g>
+  <g fill="#7b8a9b" font-family="Arial,sans-serif" font-size="10" text-anchor="middle">
+    <text x="70" y="341">0</text><text x="190" y="341">2</text><text x="310" y="341">4</text><text x="430" y="341">6</text><text x="550" y="341">8</text><text x="670" y="341">10</text><text x="790" y="341">12</text>
+  </g>
+  <text x="430" y="367" fill="#617286" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Elapsed time (minutes)</text>
+  <polyline fill="none" stroke="#20a5bc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="70,58.9 130,80.7 190,102.2 250,124.1 310,145.2 370,165.7 430,184.5 490,202.8 550,220.9 610,239.2 670,257.3 730,277.5 790,297.2"/>
+  <polyline fill="none" stroke="#7965d3" stroke-width="3" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round" points="70,58.9 130,78.7 190,98.5 250,118.3 310,138.1 370,157.9 430,177.7 490,197.5 550,217.3 610,237.2 670,257 730,276.8 790,296.6"/>
+  <g font-family="Arial,sans-serif" font-size="11">
+    <path d="M530 381h22" stroke="#20a5bc" stroke-width="3"/><text x="558" y="385" fill="#435469">Simulated load integration</text>
+    <path d="M695 381h22" stroke="#7965d3" stroke-width="3" stroke-dasharray="6 4"/><text x="723" y="385" fill="#435469">Constant-power reference</text>
+  </g>
+</svg>

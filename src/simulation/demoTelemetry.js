@@ -1,0 +1,4 @@
+export function createSoftwareTelemetry(seconds=0){
+ const t=Math.max(0,seconds),phase=t*.14,x=42*Math.sin(phase),z=30*(Math.cos(phase)-1),heading=Math.atan2(42*.14*Math.cos(phase),30*.14*Math.sin(phase)||.0001),altitude=12+2.5*Math.sin(t*.45),verticalSpeed=1.125*Math.cos(t*.45),verticalAcceleration=-.50625*Math.sin(t*.45),throttle=Math.max(0,Math.min(100,(4.2*(9.81+verticalAcceleration))/.6));
+ return {x_m:x,z_m:z,altitude_m:altitude,vertical_speed_mps:verticalSpeed,heading_rad:heading,pitch_deg:4*Math.sin(t*.7),roll_deg:3*Math.cos(t*.55),yaw_deg:heading*180/Math.PI,speed_mps:7.5+Math.sin(t*.6),measured_acceleration_mps2:verticalAcceleration,throttle_percent:throttle,battery_percent:Math.max(20,96-t*.025),voltage:18+Math.max(20,96-t*.025)*.042,current:.8+throttle*.07,motor_temperature:31+throttle*.11,motor_rpm:Math.round(throttle*48),wind_speed:6+Math.sin(t*.25),payload_kg:1.5,motor_efficiency:.94,sim_time_s:t,telemetry_source:'SOFTWARE SIMULATION'};
+}
